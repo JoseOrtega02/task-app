@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #072227;
+  color: #aefeff;
+  text-align: center;
+}
+
+.navbar__icon {
+  position: fixed;
+  top: 15;
+  right: 15;
+  z-index: 3;
+}
+
+.navbar__icon span {
+  font-size: 1.8rem;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  background-color: #4fbdba;
+  height: 100vh;
+  width: 70vw;
+  z-index: 1;
+}
+
+.navbar ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navbar ul li {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #072227;
+}
+
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.container input {
+  background-color: #4fbdba;
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+
+.container input::-webkit-input-placeholder {
+  color: #072227;
+}
+
+.container input:-ms-input-placeholder {
+  color: #072227;
+}
+
+.container input::-ms-input-placeholder {
+  color: #072227;
+}
+
+.container input::placeholder {
+  color: #072227;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.container input:active {
+  border: none;
+}
+
+.container button {
+  background-color: #4fbdba;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  padding: 5px 20px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes unrotate {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes unrotate {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

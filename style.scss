@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+$color1: #072227;
+$color2: #35858b;
+$color3: #4fbdba;
+$color4: #aefeff;
+
+body {
+  box-sizing: border-box;
+  background-color: $color1;
+  color: $color4;
+  text-align: center;
+}
+.navbar__icon {
+  position: fixed;
+  top: 15;
+  right: 15;
+  z-index: 3;
+
+  span {
+    font-size: 1.8rem;
+    animation-duration: 1s;
+    // animation-name: rotate;
+    // transform: rotate(180deg);
+  }
+}
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  background-color: $color3;
+  height: 100vh;
+  width: 70vw;
+  z-index: 1;
+
+  ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0px;
+    li {
+      line-height: 3rem;
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        color: $color1;
+      }
+    }
+  }
+}
+
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  input {
+    background-color: $color3;
+    border: none;
+    height: 20px;
+    padding: 5px;
+  }
+  input::placeholder {
+    color: $color1;
+  }
+  input:focus {
+    outline: none;
+  }
+  input:active {
+    border: none;
+  }
+  button {
+    background-color: $color3;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    padding: 5px 20px;
+  }
+}
+
+// animaciones
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes unrotate {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
